@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guardián de la Memoria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/memoria.css">
+
+</head>
+<body>
+<div class="machine">
+
+  <div class="pins"></div>
+  <div class="hud">
+    <div class="brand">GUARDIÁN DE LA <span>MEMORIA</span></div>
+    <div class="hud-right">
+      <span class="streak-tag" id="streakTag"></span>
+      <div class="lives" id="livesBox"></div>
+      <div class="score-box">Puntaje<strong id="scoreDisplay">0</strong></div>
+    </div>
+  </div>
+  <div class="timer-wrap" id="timerWrap"><div class="timer-bar" id="timerBar"></div></div>
+  <div class="progress-strip" id="progressStrip" style="display:none;">
+    <span id="progressLabel"></span>
+    <span id="progressCount"></span>
+  </div>
+  <div class="core-strip-wrap" id="coreStripWrap" style="display:none;">
+    <div class="core-strip-label">Núcleo del sistema</div>
+    <div class="core-strip" id="coreStrip"></div>
+  </div>
+
+  <div id="app"></div>
+  <div class="confetti-wrap" id="confettiWrap"></div>
+
+</div>
+
+<script src="scripts/memoria.js"></script>
+</body>
+</html>
